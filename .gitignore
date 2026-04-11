@@ -6,7 +6,7 @@ __pycache__/
 .Python
 .venv/
 venv/
-ENV/
+# 勿写 ENV/：在 Windows 上会误忽略小写 env/（本书依赖目录）
 
 # IDE
 .idea/
