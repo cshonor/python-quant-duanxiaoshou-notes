@@ -40,6 +40,11 @@
 - 说明：相比 `pandas-datareader + Yahoo Finance`，`akshare` 更适合当前入门环境，通常不需要额外代理。
 - 运行：`python codes/ch01_demo/akshare_stock_daily.py`
 
+- `tushare_daily.py`
+- 用途：使用 `tushare` 获取 A 股日线数据（更贴合国内数据生态）。
+- 准备：先注册 Tushare 并获取 token，建议设置为环境变量 `TUSHARE_TOKEN`。
+- 运行：`$env:TUSHARE_TOKEN="你的token"; python codes/ch01_demo/tushare_daily.py`
+
 ---
 
 ## 六、延伸与待办（可选）
