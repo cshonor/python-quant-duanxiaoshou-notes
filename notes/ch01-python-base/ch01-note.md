@@ -35,7 +35,10 @@
 
 （对应目录：`codes/ch01_demo/`）
 
--
+- `akshare_stock_daily.py`
+- 用途：演示如何在国内环境直接拉取 A 股历史日线数据。
+- 说明：相比 `pandas-datareader + Yahoo Finance`，`akshare` 更适合当前入门环境，通常不需要额外代理。
+- 运行：`python codes/ch01_demo/akshare_stock_daily.py`
 
 ---
 
