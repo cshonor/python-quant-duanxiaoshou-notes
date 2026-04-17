@@ -7,6 +7,7 @@
 - `akshare_stock_daily.py`：使用 `akshare` 获取 A 股日线数据的最小示例。
 - `tushare_daily.py`：使用 `tushare` 获取 A 股日线数据（需要 Token）。
 - `jqdata_maotai.py`：使用聚宽 **JQData**（`jqdatasdk`）查询茅台当日日 K + 当年日 K（需聚宽账号，见环境变量）。
+- `jqdata_plot_signal.py`：聚宽 **JQData** + `matplotlib` 可视化信号（收盘价曲线叠加 Signal 标记）。
 
 ## 运行方式
 
@@ -29,4 +30,13 @@ python codes/ch01_demo/tushare_daily.py
 $env:JQ_USERNAME="你的聚宽账号"
 $env:JQ_PASSWORD="你的密码"
 python codes/ch01_demo/jqdata_maotai.py
+```
+
+聚宽 JQData 可视化（会弹出图形窗口）：
+
+```bash
+# PowerShell:
+$env:JQ_USERNAME="你的聚宽账号"
+$env:JQ_PASSWORD="你的密码"
+python codes/ch01_demo/jqdata_plot_signal.py
 ```
