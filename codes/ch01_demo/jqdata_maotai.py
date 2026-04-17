@@ -45,8 +45,14 @@ def main():
             end_date=today,
             frequency="daily",
         )
-        print("\n===== 贵州茅台 当年所有日K =====")
-        print(df_year)
+        # Pandas: diff() / pct_change() 计算涨跌额与涨跌幅
+        if "close" in df_year.columns:
+            df_year["diff_close"] = df_year["close"].diff()
+            df_year["pct_close"] = df_year["close"].pct_change()
+
+        print("\n===== 贵州茅台 当年所有日K（含 diff/pct） =====")
+        show_cols = [c for c in ["open", "close", "high", "low", "volume", "money", "diff_close", "pct_close"] if c in df_year.columns]
+        print(df_year[show_cols].tail(10) if show_cols else df_year.tail(10))
     finally:
         logout()
 
