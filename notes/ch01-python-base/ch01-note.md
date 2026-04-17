@@ -45,8 +45,13 @@
 - 准备：先注册 Tushare 并获取 token，建议设置为环境变量 `TUSHARE_TOKEN`。
 - 运行：`$env:TUSHARE_TOKEN="你的token"; python codes/ch01_demo/tushare_daily.py`
 
+- `jqdata_maotai.py`
+- 用途：聚宽 **JQData** 查贵州茅台当日日 K + 当年全部日 K（与 [jqdata-vs-tushare.md](./jqdata-vs-tushare.md) 对照表配套）。
+- 准备：聚宽账号；建议设置 `JQ_USERNAME` / `JQ_PASSWORD`，勿把密码写进代码。
+- 运行：`$env:JQ_USERNAME="..."; $env:JQ_PASSWORD="..."; python codes/ch01_demo/jqdata_maotai.py`
+
 ---
 
 ## 六、延伸与待办（可选）
 
--
+- 本地拉数据时若对比 **聚宽 JQData** 与 **Tushare**，见同目录：[jqdata-vs-tushare.md](./jqdata-vs-tushare.md)。

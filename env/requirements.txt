@@ -5,3 +5,4 @@ tushare
 akshare
 backtrader
 requests
+jqdatasdk
